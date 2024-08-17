@@ -1,0 +1,16 @@
+{
+    "name": "Kartishki.Durak",
+    "rootNamespace": "",
+    "references": [
+        "GUID:520071baccdf4a94fa5ad893e44e1706"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}
