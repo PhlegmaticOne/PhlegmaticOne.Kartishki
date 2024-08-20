@@ -156,6 +156,11 @@ namespace Kartishki.Core.Components
         {
             return Value is >= 2 and <= 10;
         }
+
+        public bool IsLetter()
+        {
+            return Value >= CardDefaultRanks["J"] && Value <= CardDefaultRanks["A"];
+        }
         
         public static bool operator >(in RankComponent a, in RankComponent b)
         {

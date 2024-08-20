@@ -49,15 +49,15 @@ namespace Kartishki.Core.Components
             return new JokerComponent(colorType);
         }
 
-        private JokerComponent(int colorType)
+        private JokerComponent(int color)
         {
-            ColorType = colorType;
+            Color = color;
         }
 
         /// <summary>
         /// Joker color
         /// </summary>
-        public int ColorType { get; }
+        public int Color { get; }
 
         public bool IsValid()
         {
@@ -66,7 +66,7 @@ namespace Kartishki.Core.Components
 
         public bool Equals(JokerComponent other)
         {
-            return ColorType == other.ColorType;
+            return Color == other.Color;
         }
 
         public override bool Equals(object obj)
@@ -76,12 +76,12 @@ namespace Kartishki.Core.Components
 
         public override int GetHashCode()
         {
-            return ColorType;
+            return Color;
         }
 
         public override string ToString()
         {
-            return $"★{ColorType}";
+            return $"★{Color}";
         }
 
         private static bool IsJokerColorValid(int color)

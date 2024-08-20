@@ -7,7 +7,7 @@ using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Handlers.Attacking
+namespace App.Scripts.EditTests.Durak.Handlers.Attacking
 {
     [TestFixture]
     public class AttackActionHandlerTests

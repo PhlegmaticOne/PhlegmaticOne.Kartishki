@@ -5,7 +5,7 @@ using Kartishki.Core;
 using Kartishki.Core.Components;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Turns
+namespace App.Scripts.EditTests.Durak.Turns
 {
     [TestFixture]
     public class TurnCardsContainerTests

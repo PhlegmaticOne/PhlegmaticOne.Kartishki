@@ -7,7 +7,7 @@ using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Game
+namespace App.Scripts.EditTests.Durak.Game
 {
     [TestFixture]
     public class DurakGameResultCheckerTests

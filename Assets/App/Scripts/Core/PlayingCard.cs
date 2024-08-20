@@ -171,7 +171,7 @@ namespace Kartishki.Core
 
         private int GetCardColor()
         {
-            return IsJoker() ? Joker.ColorType : Card.Suit.Color;
+            return IsJoker() ? Joker.Color : Card.Suit.Color;
         }
     }
 }

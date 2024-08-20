@@ -8,7 +8,7 @@ using App.Scripts.Durak.Players.Models;
 using Kartishki.Core;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Decks
+namespace App.Scripts.EditTests.Durak.Decks
 {
     [TestFixture]
     public class DeckTests

@@ -10,7 +10,7 @@ using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Handlers.Defense
+namespace App.Scripts.EditTests.Durak.Handlers.Defense
 {
     [TestFixture]
     public class DefenseHandlerTests

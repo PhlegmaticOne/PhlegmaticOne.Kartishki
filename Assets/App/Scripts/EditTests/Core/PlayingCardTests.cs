@@ -3,7 +3,7 @@ using Kartishki.Core;
 using Kartishki.Core.Components;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Core
+namespace App.Scripts.EditTests.Core
 {
     [TestFixture]
     public class PlayingCardTests

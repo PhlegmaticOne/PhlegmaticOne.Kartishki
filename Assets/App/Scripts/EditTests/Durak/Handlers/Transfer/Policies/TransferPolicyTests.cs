@@ -5,7 +5,7 @@ using App.Scripts.Durak.Turns;
 using Kartishki.Core;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Handlers.Transfer.Policies
+namespace App.Scripts.EditTests.Durak.Handlers.Transfer.Policies
 {
     [TestFixture]
     public class TransferPolicyTests

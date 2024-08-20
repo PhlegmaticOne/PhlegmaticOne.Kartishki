@@ -7,7 +7,7 @@ using App.Scripts.Durak.Players.Policies.Siege;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Players
+namespace App.Scripts.EditTests.Durak.Players
 {
     [TestFixture]
     public class DurakPlayersCircleTests

@@ -176,6 +176,15 @@ namespace Kartishki.Core.Components
         }
 
         /// <summary>
+        /// Gets suit one char value converted to string
+        /// </summary>
+        /// <returns>Suit one char value converted to string</returns>
+        public string GetValueString()
+        {
+            return Value.ToString();
+        }
+
+        /// <summary>
         /// Checks current suit equality with other by equality of their values and names
         /// </summary>
         /// <param name="other">Other suit</param>

@@ -5,7 +5,7 @@ using App.Scripts.Durak.Players.Models;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Handlers.FailDefense
+namespace App.Scripts.EditTests.Durak.Handlers.FailDefense
 {
     [TestFixture]
     public class FailDefenseHandlerTests

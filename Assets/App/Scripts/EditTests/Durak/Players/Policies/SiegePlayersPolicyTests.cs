@@ -4,7 +4,7 @@ using App.Scripts.Durak.Players.Models;
 using App.Scripts.Durak.Players.Policies.Siege;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Players.Policies
+namespace App.Scripts.EditTests.Durak.Players.Policies
 {
     [TestFixture]
     public class SiegePlayersPolicyTests

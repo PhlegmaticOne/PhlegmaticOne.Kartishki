@@ -1,23 +1,21 @@
 {
-    "name": "Kartishki.Tests",
+    "name": "PlayTests",
     "rootNamespace": "",
     "references": [
-        "UnityEditor.TestRunner",
         "UnityEngine.TestRunner",
-        "Kartishki.Core",
+        "UnityEditor.TestRunner",
         "Kartishki.Durak",
+        "Kartishki.Core",
         "Kartishki.DurakGame"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
         "nunit.framework.dll",
-        "Zenject-usage.dll",
-        "Moq.dll"
+        "Moq.dll",
+        "Sirenix.Serialization.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [

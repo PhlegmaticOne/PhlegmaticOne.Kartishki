@@ -8,7 +8,7 @@ using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Players.Policies
+namespace App.Scripts.EditTests.Durak.Players.Policies
 {
     [TestFixture]
     public class FirstAttackerPolicyTests

@@ -1,0 +1,18 @@
+{
+    "name": "Kartishki.DurakGame",
+    "rootNamespace": "",
+    "references": [
+        "GUID:520071baccdf4a94fa5ad893e44e1706",
+        "GUID:51a9183f276333844aba46f5f8daf806",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

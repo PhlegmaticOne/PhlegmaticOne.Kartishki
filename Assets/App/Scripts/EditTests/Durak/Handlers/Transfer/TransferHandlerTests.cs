@@ -9,7 +9,7 @@ using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Handlers.Transfer
+namespace App.Scripts.EditTests.Durak.Handlers.Transfer
 {
     [TestFixture]
     public class TransferHandlerTests

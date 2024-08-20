@@ -5,7 +5,7 @@ using App.Scripts.Durak.Turns;
 using Kartishki.Core;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Handlers.Attacking.Attack.Policies
+namespace App.Scripts.EditTests.Durak.Handlers.Attacking.Attack.Policies
 {
     [TestFixture]
     public class AttackPoliciesTests

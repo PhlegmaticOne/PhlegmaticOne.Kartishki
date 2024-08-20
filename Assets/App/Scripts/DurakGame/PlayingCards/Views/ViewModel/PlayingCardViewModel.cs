@@ -1,4 +1,5 @@
-﻿using Kartishki.Core;
+﻿using System;
+using Kartishki.Core;
 using Kartishki.Core.Components;
 
 namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
@@ -18,7 +19,7 @@ namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
         {
             return new PlayingCardViewModel(
                 card.Card.Rank.Name,
-                card.Card.Suit.Value.ToString(),
+                card.Card.Suit.GetValueString(),
                 card.Card.Rank,
                 GetCardType(card),
                 GetCardColor(card));
@@ -32,7 +33,7 @@ namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
 
         private static int GetCardColor(PlayingCard card)
         {
-            return card.IsJoker() ? card.Joker.ColorType : card.Card.Suit.Color;
+            return card.IsJoker() ? card.Joker.Color : card.Card.Suit.Color;
         }
         
         private static PlayingCardViewModelType GetCardType(PlayingCard card)
@@ -47,7 +48,12 @@ namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
                 return PlayingCardViewModelType.Numeric;
             }
 
-            return PlayingCardViewModelType.Letter;
+            if (card.Card.Rank.IsLetter())
+            {
+                return PlayingCardViewModelType.Letter;
+            }
+
+            throw new ArgumentException("Unknown card card", nameof(card));
         }
     }
 }

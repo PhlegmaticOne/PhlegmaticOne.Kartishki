@@ -10,7 +10,7 @@ using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Handlers.Attacking.Siege
+namespace App.Scripts.EditTests.Durak.Handlers.Attacking.Siege
 {
     [TestFixture]
     public class SiegeHandlerTests

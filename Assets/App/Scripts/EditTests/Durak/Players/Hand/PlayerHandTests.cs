@@ -5,7 +5,7 @@ using Kartishki.Core;
 using Kartishki.Core.Components;
 using NUnit.Framework;
 
-namespace App.Scripts.Tests.Durak.Players.Hand
+namespace App.Scripts.EditTests.Durak.Players.Hand
 {
     [TestFixture]
     public class PlayerHandTests
