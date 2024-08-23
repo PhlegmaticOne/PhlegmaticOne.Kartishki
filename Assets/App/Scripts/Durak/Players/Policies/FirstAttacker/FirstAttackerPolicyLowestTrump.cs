@@ -19,9 +19,9 @@ namespace App.Scripts.Durak.Players.Policies.FirstAttacker
                 var trumpCardsInHand = player.Hand.GetCardsWithSuit(trumpSuit);
                 var minTrumpInHand = GetMinTrumpInHand(trumpCardsInHand);
 
-                if (minTrumpInHand is not null && minTrumpInHand.Card.Rank < minRank)
+                if (minTrumpInHand is not null && minTrumpInHand.Rank < minRank)
                 {
-                    minRank = minTrumpInHand.Card.Rank;
+                    minRank = minTrumpInHand.Rank;
                     firstAttacker = player;
                 }
             }
@@ -36,9 +36,9 @@ namespace App.Scripts.Durak.Players.Policies.FirstAttacker
 
             foreach (var card in cards)
             {
-                if (card.Card.Rank < min)
+                if (card.Rank < min)
                 {
-                    min = card.Card.Rank;
+                    min = card.Rank;
                     result = card;
                 }
             }

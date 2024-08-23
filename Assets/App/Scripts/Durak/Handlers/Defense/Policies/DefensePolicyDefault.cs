@@ -28,8 +28,8 @@ namespace App.Scripts.Durak.Handlers.Defense.Policies
         private static bool DefenseCardRankGreaterThanAttackCardRank(
             PlayingCard defenceCard, PlayingCard attackCard)
         {
-            return defenceCard.HasSuit(attackCard.Card.Suit) &&
-                   defenceCard.Card.Rank > attackCard.Card.Rank;
+            return defenceCard.HasSuit(attackCard.Suit) &&
+                   defenceCard.Rank > attackCard.Rank;
         }
 
         private static bool DefenseCardIsTrumpAndCanBeatAttackCard(
@@ -37,7 +37,7 @@ namespace App.Scripts.Durak.Handlers.Defense.Policies
         {
             if (attackCard.HasSuit(trumpSuit))
             {
-                return defenceCard.Card.Rank > attackCard.Card.Rank;
+                return defenceCard.Rank > attackCard.Rank;
             }
             
             return defenceCard.HasSuit(trumpSuit);

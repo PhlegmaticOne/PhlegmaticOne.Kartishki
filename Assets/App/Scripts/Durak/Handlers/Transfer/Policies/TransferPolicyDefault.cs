@@ -13,7 +13,7 @@ namespace App.Scripts.Durak.Handlers.Transfer.Policies
             
             return NextPlayerHasEnoughCards(nextPlayer, turnCards) && 
                    turnCards.DefenseCardsCount == 0 &&
-                   turnCards.HasAttackCardWithRank(card.Card.Rank);
+                   turnCards.HasAttackCardWithRank(card.Rank);
         }
 
         private static bool NextPlayerHasEnoughCards(DurakPlayer nextPlayer, TurnCardsContainer turnCards)

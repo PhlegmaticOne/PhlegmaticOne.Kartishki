@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using Kartishki.Core.Components;
 using NUnit.Framework;
@@ -15,7 +14,7 @@ namespace App.Scripts.EditTests.Core
         {
             //Act
             //Assert
-            Assert.Throws<ArgumentException>(() => SuitComponent.Create('♠', suitName, -1));
+            Assert.Throws<ArgumentException>(() => SuitComponent.Create('♠', suitName));
         }
         
         [Test]
@@ -26,17 +25,7 @@ namespace App.Scripts.EditTests.Core
             
             //Act
             //Assert
-            Assert.Throws<ArgumentException>(() => SuitComponent.Create(value, suitName, -1));
-        }
-        
-        [Test]
-        public void Create_ShouldThrowArgumentException_WhenSuitColorLessThanZero()
-        {
-            const string suitName = "Suit";
-            
-            //Act
-            //Assert
-            Assert.Throws<ArgumentException>(() => SuitComponent.Create('♣', suitName, -1));
+            Assert.Throws<ArgumentException>(() => SuitComponent.Create(value, suitName));
         }
 
         [TestCaseSource(typeof(SuitValidData), nameof(SuitValidData.Get))]
@@ -44,7 +33,7 @@ namespace App.Scripts.EditTests.Core
         {
             //Act
             //Assert
-            Assert.DoesNotThrow(() => SuitComponent.Create(testData.value, testData.name, 1));
+            Assert.DoesNotThrow(() => SuitComponent.Create(testData.value, testData.name));
         }
 
         [Test]
@@ -52,39 +41,11 @@ namespace App.Scripts.EditTests.Core
         {
             //Arrange
             var compareOne = SuitComponent.Clubs;
-            var compareTwo = SuitComponent.Create('♣', "Clubs", SuitComponent.BlackColor);
+            var compareTwo = SuitComponent.Create('♣', "Clubs");
             
             //Act
             //Assert
             Assert.AreEqual(compareOne, compareTwo);
-        }
-
-        [TestCaseSource(typeof(SuitParseData), nameof(SuitParseData.Valid))]
-        public SuitComponent Parse_ShouldReturnParsedSuit_WhenInputValueIsDefaultSuitValue(string value)
-        {
-            //Act
-            //Assert
-            return SuitComponent.Parse(value);
-        }
-        
-        [Test]
-        public void Parse_ShouldThrowArgumentException_WhenInputValueIsInvalid(
-            [Values("1", "♣♣♣", "asf", "")] string value)
-        {
-            //Act
-            //Assert
-            Assert.Throws<ArgumentException>(() => SuitComponent.Parse(value));
-        }
-    }
-
-    public class SuitParseData
-    {
-        public static IEnumerable Valid()
-        {
-            yield return new TestCaseData("♠").Returns(SuitComponent.Spades);
-            yield return new TestCaseData("♥").Returns(SuitComponent.Hearts);
-            yield return new TestCaseData("♦").Returns(SuitComponent.Diamonds);
-            yield return new TestCaseData("♣").Returns(SuitComponent.Clubs);
         }
     }
 

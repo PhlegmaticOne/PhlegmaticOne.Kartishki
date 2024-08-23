@@ -16,7 +16,7 @@ namespace App.Scripts.Durak.Handlers.Attacking.Attack.Policies
                 return false;
             }
             
-            return turnCards.AttackCardsCount == 0 || turnCards.HasAttackCardWithRank(attackCard.Card.Rank);
+            return turnCards.AttackCardsCount == 0 || turnCards.HasAttackCardWithRank(attackCard.Rank);
         }
 
         public bool IsAttackerCanBesiege(Attacker attacker, TurnCardsContainer cardsContainer)
@@ -28,7 +28,7 @@ namespace App.Scripts.Durak.Handlers.Attacking.Attack.Policies
 
             var player = attacker.Player;
             var attackCard = cardsContainer.AttackSequence[0].AttackCard;
-            return player.HasCards && !player.Hand.GetCardsWithRank(attackCard.Card.Rank).Any();
+            return player.HasCards && !player.Hand.GetCardsWithRank(attackCard.Rank).Any();
         }
     }
 }

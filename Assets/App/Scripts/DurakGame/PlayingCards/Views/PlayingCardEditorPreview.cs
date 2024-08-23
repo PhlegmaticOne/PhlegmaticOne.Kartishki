@@ -50,19 +50,30 @@ namespace App.Scripts.DurakGame.PlayingCards.Views
         {
             return new ValueDropdownList<int>
             {
-                new ValueDropdownItem<int>("Red", JokerComponent.RedColor),
-                new ValueDropdownItem<int>("Black", JokerComponent.BlackColor)
+                new ValueDropdownItem<int>("Red", PlayingCardConsts.RedColor),
+                new ValueDropdownItem<int>("Black", PlayingCardConsts.BlackColor)
             };
         }
 
         private static IEnumerable<string> GetRankStringValues()
         {
-            return RankComponent.EnumerateStringValues();
+            for (var i = 2; i <= 10; i++)
+            {
+                yield return i.ToString();
+            }
+
+            yield return PlayingCardConsts.Joker;
+            yield return PlayingCardConsts.Queen;
+            yield return PlayingCardConsts.King;
+            yield return PlayingCardConsts.Ace;
         }
 
         private static IEnumerable<string> GetSuitStringValues()
         {
-            return SuitComponent.EnumerateStringValues();
+            yield return PlayingCardConsts.SpadesSuitChar.ToString();
+            yield return PlayingCardConsts.HeartsSuitChar.ToString();
+            yield return PlayingCardConsts.DiamondsSuitChar.ToString();
+            yield return PlayingCardConsts.ClubsSuitChar.ToString();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace App.Scripts.Durak.Decks.Extensions
 
         public static SuitComponent GetTrumpSuit(this IDeck deck)
         {
-            return deck.Trump.Card.Suit;
+            return deck.Trump.Suit;
         }
     }
 }

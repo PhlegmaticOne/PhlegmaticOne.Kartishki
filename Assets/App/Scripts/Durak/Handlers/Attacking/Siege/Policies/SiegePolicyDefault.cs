@@ -19,7 +19,7 @@
                 return false;
             }
             
-            return policyData.Defender.HasCards && turnCards.HasCardWithRank(siegeCard.Card.Rank);
+            return policyData.Defender.HasCards && turnCards.HasCardWithRank(siegeCard.Rank);
         }
     }
 }

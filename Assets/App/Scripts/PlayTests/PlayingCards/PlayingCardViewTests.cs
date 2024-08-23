@@ -190,7 +190,7 @@ namespace App.Scripts.PlayTests.PlayingCards
             for (var rankValue = 2; rankValue <= 10; rankValue++)
             {
                 var card = PlayingCard.Create().Card()
-                    .WithRank(rankValue, rankValue.ToString())
+                    .WithRank(RankComponent.Create(rankValue, rankValue.ToString()))
                     .WithSuit(SuitComponent.Diamonds);
 
                 var viewModel = PlayingCardViewModel.FromCard(card);

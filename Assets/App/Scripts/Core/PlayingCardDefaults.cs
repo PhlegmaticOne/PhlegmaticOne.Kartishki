@@ -115,8 +115,8 @@ namespace Kartishki.Core
         public PlayingCard AceClubs => PlayingCard.Create().Card().WithRank(RankComponent.Ace).WithSuit(SuitComponent.Clubs);
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        public PlayingCard JokerRed => PlayingCard.Create().Joker().WithComponent(JokerComponent.Red);
+        public PlayingCard JokerRed => PlayingCard.Create().Joker().WithColor(PlayingCardConsts.RedColor);
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        public PlayingCard JokerBlack => PlayingCard.Create().Joker().WithComponent(JokerComponent.Black);
+        public PlayingCard JokerBlack => PlayingCard.Create().Joker().WithColor(PlayingCardConsts.BlackColor);
     }
 }

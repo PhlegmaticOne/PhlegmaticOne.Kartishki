@@ -21,7 +21,7 @@ namespace App.Scripts.EditTests.Core
         }
         
         [Test]
-        public void IsJoker_ShouldReturnTrue_WhenCardHasJokerComponent()
+        public void IsJoker_ShouldReturnTrue_WhenCardHasJokerSuitAndRank()
         {
             //Arrange
             var jokerRed = PlayingCard.Defaults.JokerRed;
@@ -33,7 +33,7 @@ namespace App.Scripts.EditTests.Core
         }
         
         [Test]
-        public void IsCard_ShouldReturnTrue_WhenCardHasCardComponent()
+        public void IsCard_ShouldReturnTrue_WhenCardHasCardSuitAndRank()
         {
             //Assert
             var aceClubs = PlayingCard.Defaults.AceClubs;

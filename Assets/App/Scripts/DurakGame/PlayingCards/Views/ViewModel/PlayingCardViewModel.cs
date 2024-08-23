@@ -18,11 +18,11 @@ namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
         public static IPlayingCardViewModel FromCard(PlayingCard card)
         {
             return new PlayingCardViewModel(
-                card.Card.Rank.Name,
-                card.Card.Suit.GetValueString(),
-                card.Card.Rank,
+                card.Rank.Name,
+                card.Suit.ToString(),
+                card.Rank,
                 GetCardType(card),
-                GetCardColor(card));
+                card.Color);
         }
         
         public string RankView { get; }
@@ -31,11 +31,6 @@ namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
         public int Color { get; }
         public PlayingCardViewModelType CardType { get; }
 
-        private static int GetCardColor(PlayingCard card)
-        {
-            return card.IsJoker() ? card.Joker.Color : card.Card.Suit.Color;
-        }
-        
         private static PlayingCardViewModelType GetCardType(PlayingCard card)
         {
             if (card.IsJoker())
@@ -43,12 +38,12 @@ namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
                 return PlayingCardViewModelType.Joker;
             }
 
-            if (card.Card.Rank.IsNumeric())
+            if (card.Rank.IsNumeric())
             {
                 return PlayingCardViewModelType.Numeric;
             }
 
-            if (card.Card.Rank.IsLetter())
+            if (card.Rank.IsLetter())
             {
                 return PlayingCardViewModelType.Letter;
             }

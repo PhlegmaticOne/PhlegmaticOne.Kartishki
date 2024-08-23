@@ -19,8 +19,8 @@ namespace App.Scripts.EditTests.DurakGame.PlayingCards
             var viewModel = PlayingCardViewModel.FromCard(card);
 
             //Assert
-            Assert.AreEqual(card.Card.Rank, viewModel.Rank);
-            Assert.AreEqual(card.Card.Rank.Name, viewModel.RankView);
+            Assert.AreEqual(card.Rank, viewModel.Rank);
+            Assert.AreEqual(card.Rank.Name, viewModel.RankView);
         }
         
         [Test]
@@ -33,7 +33,20 @@ namespace App.Scripts.EditTests.DurakGame.PlayingCards
             var viewModel = PlayingCardViewModel.FromCard(card);
             
             //Assert
-            Assert.AreEqual(card.Card.Suit.GetValueString(), viewModel.SuitView);
+            Assert.AreEqual(card.Suit.ToString(), viewModel.SuitView);
+        }
+        
+        [Test]
+        public void FromCard_ShouldCorrectlySetCardColor()
+        {
+            //Arrange
+            var card = PlayingCard.Defaults.EightDiamonds;
+
+            //Act
+            var viewModel = PlayingCardViewModel.FromCard(card);
+            
+            //Assert
+            Assert.AreEqual(card.Color, viewModel.Color);
         }
         
         [TestCaseSource(typeof(CardsSource), nameof(CardsSource.GetCards))]
@@ -43,7 +56,7 @@ namespace App.Scripts.EditTests.DurakGame.PlayingCards
             var viewModel = PlayingCardViewModel.FromCard(card);
             
             //Assert
-            if (card.Card.Rank.IsNumeric())
+            if (card.Rank.IsNumeric())
             {
                 Assert.AreEqual(PlayingCardViewModelType.Numeric, viewModel.CardType);
             }
@@ -60,7 +73,7 @@ namespace App.Scripts.EditTests.DurakGame.PlayingCards
             var viewModel = PlayingCardViewModel.FromCard(card);
             
             //Assert
-            if (card.Card.Rank.IsLetter())
+            if (card.Rank.IsLetter())
             {
                 Assert.AreEqual(PlayingCardViewModelType.Letter, viewModel.CardType);
             }
@@ -84,40 +97,6 @@ namespace App.Scripts.EditTests.DurakGame.PlayingCards
             else
             {
                 Assert.AreNotEqual(PlayingCardViewModelType.Joker, viewModel.CardType);
-            }
-        }
-        
-        [TestCaseSource(typeof(CardsSource), nameof(CardsSource.GetCards))]
-        public void FromCard_ShouldSetJokerColor_WhenCardIsJoker(PlayingCard card)
-        {
-            //Act
-            var viewModel = PlayingCardViewModel.FromCard(card);
-            
-            //Assert
-            if (card.IsJoker())
-            {
-                Assert.AreEqual(card.Joker.Color, viewModel.Color);
-            }
-            else
-            {
-                Assert.AreNotEqual(card.Joker.Color, viewModel.Color);
-            }
-        }
-        
-        [TestCaseSource(typeof(CardsSource), nameof(CardsSource.GetCards))]
-        public void FromCard_ShouldSetCardSuitColor_WhenCardIsNotJoker(PlayingCard card)
-        {
-            //Act
-            var viewModel = PlayingCardViewModel.FromCard(card);
-            
-            //Assert
-            if (card.IsCard())
-            {
-                Assert.AreEqual(card.Card.Suit.Color, viewModel.Color);
-            }
-            else
-            {
-                Assert.AreNotEqual(card.Card.Suit.Color, viewModel.Color);
             }
         }
     }
