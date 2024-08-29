@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using App.Scripts.Cards;
 using App.Scripts.Durak.Players.Base;
-using Kartishki.Core;
 
 namespace App.Scripts.Durak.Decks
 {

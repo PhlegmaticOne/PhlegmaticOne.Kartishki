@@ -1,6 +1,6 @@
 ﻿using System;
+using App.Scripts.Cards;
 using App.Scripts.Durak.Players.Models;
-using Kartishki.Core;
 
 namespace App.Scripts.Durak.Turns
 {

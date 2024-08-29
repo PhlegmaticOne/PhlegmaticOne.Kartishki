@@ -1,6 +1,6 @@
-﻿using App.Scripts.DurakGame.PlayingCards.Views.Configs;
+﻿using App.Scripts.Cards.Components;
+using App.Scripts.DurakGame.PlayingCards.Views.Configs;
 using App.Scripts.DurakGame.PlayingCards.Views.ViewModel;
-using Kartishki.Core.Components;
 using TMPro;
 using UnityEngine;
 

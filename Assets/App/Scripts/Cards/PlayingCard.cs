@@ -1,9 +1,9 @@
 ﻿using System;
-using Kartishki.Core.Builders;
-using Kartishki.Core.Components;
-using Kartishki.Core.Parser;
+using App.Scripts.Cards.Builders;
+using App.Scripts.Cards.Components;
+using App.Scripts.Cards.Parser;
 
-namespace Kartishki.Core
+namespace App.Scripts.Cards
 {
     public class PlayingCard : IEquatable<PlayingCard>
     {

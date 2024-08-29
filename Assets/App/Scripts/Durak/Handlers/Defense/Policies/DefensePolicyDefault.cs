@@ -1,6 +1,6 @@
-﻿using App.Scripts.Durak.Decks.Extensions;
-using Kartishki.Core;
-using Kartishki.Core.Components;
+﻿using App.Scripts.Cards;
+using App.Scripts.Cards.Components;
+using App.Scripts.Durak.Decks.Extensions;
 
 namespace App.Scripts.Durak.Handlers.Defense.Policies
 {

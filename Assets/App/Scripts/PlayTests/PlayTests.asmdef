@@ -5,8 +5,8 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Kartishki.Durak",
-        "Kartishki.Core",
-        "Kartishki.DurakGame"
+        "Kartishki.DurakGame",
+        "Kartishki.Cards"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Kartishki.Core.Components;
+using App.Scripts.Cards.Components;
 using NUnit.Framework;
 
 namespace App.Scripts.EditTests.Core

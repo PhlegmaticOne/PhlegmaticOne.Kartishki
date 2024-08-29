@@ -3,7 +3,7 @@
 [assembly : InternalsVisibleTo("Kartishki.Tests")]
 [assembly : InternalsVisibleTo("PlayTests")]
 
-namespace Kartishki.Core
+namespace App.Scripts.Cards
 {
     public class CardsAssemblyReference { }
 }

@@ -13,7 +13,6 @@ using App.Scripts.Durak.Handlers.FailDefense.Results;
 using App.Scripts.Durak.Handlers.Transfer;
 using App.Scripts.Durak.Handlers.Transfer.Results;
 
-[assembly : InternalsVisibleTo("Kartishki.Tests")]
 namespace App.Scripts.Durak
 {
     public class DurakSession

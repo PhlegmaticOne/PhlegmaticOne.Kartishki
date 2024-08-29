@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
-using Kartishki.Core.Components;
+using App.Scripts.Cards.Components;
 
-namespace Kartishki.Core
+namespace App.Scripts.Cards
 {
     public class PlayingCardDefaults
     {

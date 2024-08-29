@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Kartishki.Core.Components
+namespace App.Scripts.Cards.Components
 {
     public partial struct RankComponent
     {

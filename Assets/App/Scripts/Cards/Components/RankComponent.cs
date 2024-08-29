@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kartishki.Core.Components
+namespace App.Scripts.Cards.Components
 {
     [Serializable]
     public readonly partial struct RankComponent : IEquatable<RankComponent>, IComparable<RankComponent>

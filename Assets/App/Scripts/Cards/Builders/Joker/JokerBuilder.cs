@@ -1,6 +1,6 @@
-﻿using Kartishki.Core.Components;
+﻿using App.Scripts.Cards.Components;
 
-namespace Kartishki.Core.Builders.Joker
+namespace App.Scripts.Cards.Builders.Joker
 {
     internal class JokerBuilder : IJokerBuilder
     {

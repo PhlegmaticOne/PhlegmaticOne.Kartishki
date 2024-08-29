@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Kartishki.Core.Extensions
+namespace App.Scripts.Cards.Extensions
 {
     public static class EnumerableExtensions
     {

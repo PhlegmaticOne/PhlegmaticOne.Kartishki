@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
+using App.Scripts.Cards;
 using App.Scripts.DurakGame.PlayingCards.Views.ViewModel;
-using Kartishki.Core;
-using Kartishki.Core.Components;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

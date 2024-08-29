@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
+using App.Scripts.Cards;
 using App.Scripts.Durak.Decks;
 using App.Scripts.DurakGame.PlayingCards.Views.ViewModel;
-using Kartishki.Core;
 using NUnit.Framework;
 
 namespace App.Scripts.EditTests.DurakGame.PlayingCards

@@ -1,6 +1,6 @@
 ﻿using System;
-using Kartishki.Core;
-using Kartishki.Core.Components;
+using App.Scripts.Cards;
+using App.Scripts.Cards.Components;
 
 namespace App.Scripts.DurakGame.PlayingCards.Views.ViewModel
 {

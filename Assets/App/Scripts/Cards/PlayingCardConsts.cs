@@ -1,4 +1,4 @@
-﻿namespace Kartishki.Core
+﻿namespace App.Scripts.Cards
 {
     public static class PlayingCardConsts
     {

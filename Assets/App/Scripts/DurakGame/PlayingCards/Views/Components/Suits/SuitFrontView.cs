@@ -1,7 +1,7 @@
-﻿using App.Scripts.DurakGame.PlayingCards.Views.Components.Suits.Group;
+﻿using App.Scripts.Cards.Components;
+using App.Scripts.DurakGame.PlayingCards.Views.Components.Suits.Group;
 using App.Scripts.DurakGame.PlayingCards.Views.Configs;
 using App.Scripts.DurakGame.PlayingCards.Views.ViewModel;
-using Kartishki.Core.Components;
 using UnityEngine;
 
 namespace App.Scripts.DurakGame.PlayingCards.Views.Components.Suits

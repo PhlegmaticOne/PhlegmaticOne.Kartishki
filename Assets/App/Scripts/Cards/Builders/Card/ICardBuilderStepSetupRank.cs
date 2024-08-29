@@ -1,6 +1,6 @@
-﻿using Kartishki.Core.Components;
+﻿using App.Scripts.Cards.Components;
 
-namespace Kartishki.Core.Builders.Card
+namespace App.Scripts.Cards.Builders.Card
 {
     public interface ICardBuilderStepSetupRank
     {

@@ -1,7 +1,7 @@
-﻿using Kartishki.Core.Builders.Card;
-using Kartishki.Core.Builders.Joker;
+﻿using App.Scripts.Cards.Builders.Card;
+using App.Scripts.Cards.Builders.Joker;
 
-namespace Kartishki.Core.Builders
+namespace App.Scripts.Cards.Builders
 {
     public class PlayerCardBuilder
     {

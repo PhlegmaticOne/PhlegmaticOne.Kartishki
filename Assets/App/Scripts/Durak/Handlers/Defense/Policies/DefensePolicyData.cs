@@ -1,5 +1,5 @@
-﻿using App.Scripts.Durak.Decks;
-using Kartishki.Core;
+﻿using App.Scripts.Cards;
+using App.Scripts.Durak.Decks;
 
 namespace App.Scripts.Durak.Handlers.Defense.Policies
 {

@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using App.Scripts.Cards;
 using App.Scripts.Durak.Decks;
 using App.Scripts.Durak.Players.Extensions;
 using App.Scripts.Durak.Players.Models;
 using App.Scripts.Durak.Players.Policies.FirstAttacker;
-using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 

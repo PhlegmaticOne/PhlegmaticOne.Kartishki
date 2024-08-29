@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using App.Scripts.Cards;
 using App.Scripts.Durak.Decks;
 using App.Scripts.Durak.Players.Extensions;
 using App.Scripts.Durak.Players.Models;
-using Kartishki.Core;
 using NUnit.Framework;
 
 namespace App.Scripts.EditTests.Durak.Decks

@@ -1,4 +1,5 @@
-﻿using App.Scripts.Durak.Decks;
+﻿using App.Scripts.Cards;
+using App.Scripts.Durak.Decks;
 using App.Scripts.Durak.Handlers.Defense;
 using App.Scripts.Durak.Handlers.Defense.Policies;
 using App.Scripts.Durak.Handlers.Defense.Results;
@@ -6,7 +7,6 @@ using App.Scripts.Durak.Players.Base;
 using App.Scripts.Durak.Players.Extensions;
 using App.Scripts.Durak.Players.Models;
 using App.Scripts.Durak.Turns;
-using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 

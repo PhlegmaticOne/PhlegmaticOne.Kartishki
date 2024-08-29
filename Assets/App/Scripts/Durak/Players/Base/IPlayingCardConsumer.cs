@@ -1,4 +1,4 @@
-﻿using Kartishki.Core;
+﻿using App.Scripts.Cards;
 
 namespace App.Scripts.Durak.Players.Base
 {

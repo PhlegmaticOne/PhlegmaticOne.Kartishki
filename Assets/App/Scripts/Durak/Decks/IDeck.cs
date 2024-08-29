@@ -1,5 +1,5 @@
-﻿using App.Scripts.Durak.Players.Base;
-using Kartishki.Core;
+﻿using App.Scripts.Cards;
+using App.Scripts.Durak.Players.Base;
 
 namespace App.Scripts.Durak.Decks
 {

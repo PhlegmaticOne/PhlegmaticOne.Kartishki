@@ -1,4 +1,4 @@
-﻿namespace Kartishki.Core.Builders.Joker
+﻿namespace App.Scripts.Cards.Builders.Joker
 {
     public interface IJokerBuilder
     {

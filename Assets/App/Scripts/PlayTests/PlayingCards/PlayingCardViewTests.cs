@@ -1,11 +1,11 @@
 ﻿using System.Collections;
+using App.Scripts.Cards;
+using App.Scripts.Cards.Components;
 using App.Scripts.DurakGame.PlayingCards.Views;
 using App.Scripts.DurakGame.PlayingCards.Views.Components.Joker;
 using App.Scripts.DurakGame.PlayingCards.Views.Components.Ranks;
 using App.Scripts.DurakGame.PlayingCards.Views.Components.Suits;
 using App.Scripts.DurakGame.PlayingCards.Views.ViewModel;
-using Kartishki.Core;
-using Kartishki.Core.Components;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;

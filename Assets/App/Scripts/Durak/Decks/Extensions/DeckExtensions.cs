@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using App.Scripts.Cards.Components;
 using App.Scripts.Durak.Players.Base;
-using Kartishki.Core.Components;
 
 namespace App.Scripts.Durak.Decks.Extensions
 {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using Kartishki.Core.Components;
+using App.Scripts.Cards.Components;
 
-namespace Kartishki.Core.Parser
+namespace App.Scripts.Cards.Parser
 {
     internal static class PlayingCardParser
     {

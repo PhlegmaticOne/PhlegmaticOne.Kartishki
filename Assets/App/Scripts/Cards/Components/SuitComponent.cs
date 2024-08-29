@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Kartishki.Core.Components
+namespace App.Scripts.Cards.Components
 {
     [Serializable]
     public readonly partial struct SuitComponent : IEquatable<SuitComponent>

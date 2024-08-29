@@ -1,11 +1,11 @@
-﻿using App.Scripts.Durak.Handlers.Transfer;
+﻿using App.Scripts.Cards;
+using App.Scripts.Durak.Handlers.Transfer;
 using App.Scripts.Durak.Handlers.Transfer.Policies;
 using App.Scripts.Durak.Handlers.Transfer.Results;
 using App.Scripts.Durak.Players.Base;
 using App.Scripts.Durak.Players.Extensions;
 using App.Scripts.Durak.Players.Models;
 using App.Scripts.Durak.Turns;
-using Kartishki.Core;
 using Moq;
 using NUnit.Framework;
 

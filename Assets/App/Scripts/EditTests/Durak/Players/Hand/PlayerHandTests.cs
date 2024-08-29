@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
+using App.Scripts.Cards;
+using App.Scripts.Cards.Components;
 using App.Scripts.Durak.Players.Hand;
-using Kartishki.Core;
-using Kartishki.Core.Components;
 using NUnit.Framework;
 
 namespace App.Scripts.EditTests.Durak.Players.Hand

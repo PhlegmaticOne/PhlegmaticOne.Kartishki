@@ -1,6 +1,6 @@
-﻿using App.Scripts.Durak.Players.Models;
+﻿using App.Scripts.Cards;
+using App.Scripts.Durak.Players.Models;
 using App.Scripts.Durak.Turns;
-using Kartishki.Core;
 
 namespace App.Scripts.Durak.Handlers.Transfer.Policies
 {

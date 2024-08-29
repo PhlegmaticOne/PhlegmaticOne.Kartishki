@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Kartishki.Core;
+using App.Scripts.Cards;
 
 namespace App.Scripts.Durak.Decks.DiscardPiles
 {
